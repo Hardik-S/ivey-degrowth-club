@@ -8,36 +8,36 @@
     <style>
         /* Global Styles */
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Helvetica Neue', Arial, sans-serif; color: #333; background-color: #fafafa; }
-        
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; color: #333; background-color: #f5f5f5; }
+
         /* Header Styling */
-        header { background: linear-gradient(135deg, #007acc, #00c9ff); color: #fff; padding: 2rem 1rem; text-align: center; }
+        header { background: linear-gradient(135deg, #2a9d8f, #264653); color: #fff; padding: 2rem 1rem; text-align: center; }
         header h1 { font-size: 3rem; margin-bottom: 0.5rem; }
-        header p { font-size: 1.2rem; opacity: 0.8; }
-        
+        header p { font-size: 1.2rem; opacity: 0.9; }
+
         /* Navigation */
         nav { display: flex; justify-content: center; gap: 1.5rem; margin: 1.5rem 0; }
-        nav a { color: #333; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: color 0.3s; }
-        nav a:hover { color: #007acc; }
-        
+        nav a { color: #264653; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: color 0.3s; }
+        nav a:hover { color: #2a9d8f; }
+
         /* Main Container */
         .container { width: 85%; max-width: 1000px; margin: 0 auto; padding: 2rem 0; }
-        
+
         /* Section Styling */
         section { margin-bottom: 3rem; padding: 2rem; background: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s; }
         section:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); }
-        h2 { font-size: 2rem; color: #007acc; margin-bottom: 1rem; }
+        h2 { font-size: 2rem; color: #2a9d8f; margin-bottom: 1rem; }
         p { line-height: 1.6; margin-bottom: 1rem; color: #555; }
-        
-        /* Join and Contact Styling */
-        .join-us, .contact { background: #007acc; color: #fff; padding: 1.5rem; text-align: center; border-radius: 8px; margin-top: 2rem; }
-        .join-us p, .contact p { color: #e0e0e0; }
-        a.button { display: inline-block; padding: 0.8rem 1.5rem; background: #fff; color: #007acc; font-weight: bold; text-decoration: none; border-radius: 5px; transition: background 0.3s, color 0.3s; }
-        a.button:hover { background: #007acc; color: #fff; }
-        
+
+        /* Special Sections */
+        .join-us, .contact, .sdgs { background: #264653; color: #fff; padding: 1.5rem; text-align: center; border-radius: 8px; margin-top: 2rem; }
+        .join-us p, .contact p, .sdgs p { color: #e0e0e0; }
+        a.button { display: inline-block; padding: 0.8rem 1.5rem; background: #fff; color: #2a9d8f; font-weight: bold; text-decoration: none; border-radius: 5px; transition: background 0.3s, color 0.3s; }
+        a.button:hover { background: #2a9d8f; color: #fff; }
+
         /* Footer */
         footer { text-align: center; padding: 1rem; background: #333; color: #fff; font-size: 0.9rem; margin-top: 2rem; }
-        
+
         /* Animations */
         html { scroll-behavior: smooth; }
         .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
@@ -48,7 +48,7 @@
 
     <header>
         <h1>Ivey Degrowth Club</h1>
-        <p>Promoting sustainable, equitable, and mindful growth.</p>
+        <p>Promoting sustainable, equitable, and mindful growth through Diversity of Thought.</p>
     </header>
 
     <nav>
@@ -56,34 +56,49 @@
         <a href="#about">About Us</a>
         <a href="#events">Events</a>
         <a href="#join">Join Us</a>
+        <a href="#sdgs">SDGs</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <div class="container">
         <section id="home" class="fade-in">
             <h2>Welcome to the Ivey Degrowth Club</h2>
-            <p>We are dedicated to exploring and advocating for sustainable growth solutions that prioritize environmental balance, equity, and mindful development.</p>
+            <p>We are dedicated to advocating for a sustainable, equitable, and mindful approach to economic growth, challenging assumptions and fostering critical discussions on pressing global issues.</p>
         </section>
 
         <section id="about" class="fade-in">
             <h2>About Us</h2>
-            <p>The Ivey Degrowth Club is committed to understanding and promoting economic policies that encourage reduction of unnecessary consumption, environmental stewardship, and social equity.</p>
+            <p>The Ivey Degrowth Club provides a platform for open discussions on sustainable alternatives to traditional growth models. Through our Diversity of Thought Series, we explore systems thinking, critical analysis, and multidisciplinary perspectives on sustainability, all to prepare students to lead in an ever-evolving global landscape.</p>
         </section>
 
         <section id="events" class="fade-in">
-            <h2>Upcoming Events</h2>
-            <p>No events currently scheduled. Stay tuned for updates!</p>
+            <h2>Diversity of Thought Events</h2>
+            <p><strong>Diversity of Thought Week (Jan 6-10, 2025):</strong> An immersive week of sustainability-focused workshops, speakers, and reflective sessions. This series challenges students to consider broader perspectives and prepares them to shape a sustainable future.</p>
+            <p>Join us for events designed to foster genuine critical thinking and align career paths with sustainability goals. Reach out for more information on our upcoming events!</p>
         </section>
 
         <section id="join" class="fade-in join-us">
             <h2>Join the Ivey Degrowth Club</h2>
-            <p>Interested in being a part of our movement? Get involved and make a difference!</p>
-            <a href="mailto:iveydegrowthclub@example.com" class="button">Join Now</a>
+            <p>Interested in aligning your career with sustainability? Become part of our movement to foster systems change and champion sustainable business practices.</p>
+            <a href="mailto:azhang.hba2025@ivey.ca" class="button">Join Now</a>
+        </section>
+
+        <section id="sdgs" class="fade-in sdgs">
+            <h2>Supporting the UN Sustainable Development Goals</h2>
+            <p>Our club is committed to advancing several UN SDGs, including:</p>
+            <ul>
+                <li>**SDG 8**: Decent Work and Economic Growth - Exploring sustainable work futures through a degrowth perspective.</li>
+                <li>**SDG 9**: Industry, Innovation, and Infrastructure - Fostering sustainable development through innovation.</li>
+                <li>**SDG 10**: Reduced Inequalities - Emphasizing justice and equity in economic frameworks.</li>
+                <li>**SDG 11**: Sustainable Cities and Communities - Advocating for clean energy and circular economies.</li>
+                <li>**SDG 12**: Responsible Consumption and Production - Promoting reduction in consumption for a sustainable future.</li>
+                <li>**SDG 16**: Peace, Justice, and Strong Institutions - Encouraging sustainable partnerships.</li>
+            </ul>
         </section>
 
         <section id="contact" class="fade-in contact">
             <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:iveydegrowthclub@example.com" style="color: #fff; text-decoration: underline;">iveydegrowthclub@example.com</a></p>
+            <p>Email: <a href="mailto:azhang.hba2025@ivey.ca" style="color: #fff; text-decoration: underline;">azhang.hba2025@ivey.ca</a></p>
             <p>Follow us on social media: 
                 <a href="#" style="color: #fff;">Instagram</a> | 
                 <a href="#" style="color: #fff;">Twitter</a>
@@ -92,7 +107,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2023 Ivey Degrowth Club. All rights reserved.</p>
+        <p>&copy; 2024 Ivey Degrowth Club. All rights reserved.</p>
     </footer>
 
     <script>
