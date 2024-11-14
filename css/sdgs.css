@@ -1,0 +1,23 @@
+/* sdgs.css */
+
+.sdg-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tile-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.5rem;
+}
+
+.tile {
+    cursor: pointer;
+}
+
+.tile-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
