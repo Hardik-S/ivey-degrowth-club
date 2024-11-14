@@ -1,24 +1,26 @@
-/* Rtiles - Flip Effect Styling */
+/* Rtiles - Final Flip Effect Styling */
 
 .Rtile-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
     padding: 1rem 0;
     justify-items: center;
 }
 
 .Rtile {
-    perspective: 1000px; /* Enables 3D effect */
+    width: 150px;
+    height: 200px;
+    perspective: 1000px; /* Enables 3D effect for flip */
     cursor: pointer;
 }
 
 .Rtile-inner {
     position: relative;
     width: 100%;
-    height: 120px;
+    height: 100%;
     transform-style: preserve-3d;
-    transition: transform 0.6s;
+    transition: transform 0.6s ease-in-out;
 }
 
 .Rtile:hover .Rtile-inner {
@@ -41,14 +43,16 @@
 }
 
 .Rtile-front {
-    background-color: #6ea727; /* Green background for the front */
+    background-color: #6ea727; /* Green for front */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .Rtile-back {
-    background-color: #3e4d42; /* Dark green background for the back */
+    background-color: #3e4d42; /* Dark green for back */
     transform: rotateY(180deg);
     color: #f0f0f0;
+    font-size: 0.9rem;
+    line-height: 1.4;
 }
