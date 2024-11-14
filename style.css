@@ -1,19 +1,22 @@
 /* Global Styles */
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Helvetica Neue', Arial, sans-serif; color: #333; background-color: #f5f5f5; }
+body { font-family: Arial, sans-serif; color: #333; background-color: #f5f5f5; }
 
 /* Header Styling */
-header { background: linear-gradient(135deg, #2a9d8f, #264653); color: #fff; padding: 2rem 1rem; text-align: center; }
+header {
+    background: #3e4d42;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-family: 'Impact', sans-serif;
+}
 header h1 { font-size: 3rem; margin-bottom: 0.5rem; }
-header p { font-size: 1.2rem; opacity: 0.9; }
+header p { font-size: 1.2rem; }
 
 /* Navigation */
 nav { display: flex; justify-content: center; gap: 1.5rem; margin: 1.5rem 0; }
-nav a { color: #264653; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: color 0.3s; }
-nav a:hover { color: #2a9d8f; }
-
-/* Container */
-.container { width: 85%; max-width: 1000px; margin: 0 auto; padding: 2rem 0; }
+nav a { color: #3e4d42; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: color 0.3s; }
+nav a:hover { color: #6ea727; }
 
 /* Tile Container */
 .tile-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
@@ -46,12 +49,12 @@ nav a:hover { color: #2a9d8f; }
     padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.tile-front { background-color: #2a9d8f; color: white; }
+.tile-front { background-color: #6ea727; color: white; }
 .tile-back {
-    background-color: #264653;
+    background-color: #3e4d42;
     color: #fff;
     transform: rotateY(180deg);
 }
 
 /* Footer */
-footer { text-align: center; padding: 1rem; background: #333; color: #fff; font-size: 0.9rem; margin-top: 2rem; }
+footer { text-align: center; padding: 1rem; background: #333; color: #fff; font-size: 0.9rem; }
