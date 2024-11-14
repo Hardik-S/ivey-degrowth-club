@@ -1,0 +1,17 @@
+/* header.css */
+header {
+    background: #3e4d42;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-family: 'Impact', sans-serif;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
