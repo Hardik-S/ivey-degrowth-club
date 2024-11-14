@@ -6,3 +6,9 @@ footer {
     color: #fff;
     font-size: 0.9rem;
 }
+.footer-logo {
+    width: 16px; /* Adjust size to match typical symbol size */
+    height: 16px;
+    vertical-align: middle; /* Aligns the image with text */
+    margin-right: 5px; /* Space between logo and text */
+}
