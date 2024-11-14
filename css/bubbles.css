@@ -1,0 +1,22 @@
+/* bubbles.css */
+
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(110, 167, 39, 0.5); /* Semi-transparent green color */
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    animation: bubble-fade 1s ease-out forwards;
+}
+
+/* Animation for bubble fade and size increase */
+@keyframes bubble-fade {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+}
