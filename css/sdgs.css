@@ -1,23 +1,23 @@
-/* sdgs.css */
+/* sdgs.css - SDG Tiles (Stiles) */
 
-.sdg-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.tile-container {
+.Stile-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 1.5rem;
 }
 
-.tile {
+.Stile {
     cursor: pointer;
 }
 
-.tile-inner {
+.Stile-inner {
     width: 100%;
     height: 100%;
     text-align: center;
+}
+
+.sdg-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
