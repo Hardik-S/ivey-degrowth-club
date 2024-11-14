@@ -52,8 +52,13 @@
 .Rtile-back {
     background-color: #3e4d42; /* Dark green background */
     transform: rotateY(180deg);
-    color: white; /* Set text color to white */
+    color: #ffffff !important; /* Force text color to white */
     font-size: 0.9rem;
     line-height: 1.4;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
