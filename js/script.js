@@ -55,3 +55,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.close-btn').addEventListener('click', function() {
+        document.querySelector('.notification-bar').style.display = 'none';
+    });
+});

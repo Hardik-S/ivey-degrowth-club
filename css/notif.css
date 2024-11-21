@@ -1,0 +1,61 @@
+.notification-bar {
+    all: unset; /* Reset all inherited styles */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3e4d42;
+    color: #d9d9d9;
+    padding: 15px 20px;
+    font-size: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #6ea727;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Text styles */
+.notification-bar span {
+    margin-right: 10px;
+    color: #d9d9d9; /* Light gray text */
+}
+
+/* Sign Petition Link */
+.sign-link {
+    color: #6ea727; /* Green for emphasis */
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.sign-link:hover {
+    color: #a2db4f; /* Slightly lighter green on hover */
+    text-decoration: underline;
+}
+
+/* Close Button */
+.close-btn {
+    background: none;
+    border: none;
+    color: #d9d9d9; /* Matches text color */
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+    position: absolute;
+    right: 20px; /* Place close button on the right side */
+}
+
+.close-btn:hover {
+    color: #a2db4f; /* Lighter green on hover */
+}
+
+/* Prevent content from hiding under the bar */
+body {
+    padding-top: 65px; /* Space for the fixed notification bar */
+}
