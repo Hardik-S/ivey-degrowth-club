@@ -1,10 +1,16 @@
+/* Reset body and html margins/paddings */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Notification Bar Styles */
 .notification-bar {
-    all: unset; /* Reset all inherited styles */
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #3e4d42;
-    color: #d9d9d9;
+    background-color: #3e4d42; /* Dark greenish-gray background */
+    color: #d9d9d9; /* Light gray text */
     padding: 15px 20px;
     font-size: 16px;
     position: fixed;
@@ -12,9 +18,10 @@
     left: 0;
     right: 0;
     z-index: 1000;
-    border-bottom: 2px solid #6ea727;
+    border-bottom: 2px solid #6ea727; /* Green border for subtle accent */
     font-family: 'Arial', sans-serif;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Remove any potential default margin */
 }
 
 
