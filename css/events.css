@@ -1,0 +1,87 @@
+/* Scoped styling for the events section */
+.events-section .fade-in {
+    animation: fadeIn 1s ease-in-out;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 1rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.events-section .fade-in h2 {
+    text-align: center;
+    color: #2b3d50;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.events-section .fade-in p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #4a4a4a;
+    margin-bottom: 2rem;
+}
+
+.events-section .event-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+}
+
+.events-section .event-tile {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.events-section .event-tile:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.events-section .event-tile h3 {
+    font-size: 1.5rem;
+    color: #2b3d50;
+    margin: 1rem 0;
+}
+
+.events-section .event-tile p {
+    font-size: 1rem;
+    color: #4a4a4a;
+    margin: 0.5rem 1rem;
+}
+
+.events-section .event-tile a {
+    display: inline-block;
+    text-decoration: none;
+    background: #2b3d50;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 1rem auto;
+    transition: background-color 0.3s;
+}
+
+.events-section .event-tile a:hover {
+    background: #44607d;
+}
+
+/* Add fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
