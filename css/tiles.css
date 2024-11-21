@@ -10,7 +10,7 @@
 
 .Rtile {
     width: 150px;
-    height: 200px;
+    height: 150px;
     perspective: 1000px; /* Enables 3D effect for flip */
     cursor: pointer;
 }

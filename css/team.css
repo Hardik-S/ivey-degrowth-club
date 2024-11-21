@@ -1,3 +1,4 @@
+/* General Styling for the Page */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,6 +8,7 @@ body {
     text-align: center;
 }
 
+/* Header Section */
 header h1 {
     padding: 20px;
     background-color: #6ea727; /* Highlighted green for header */
@@ -14,10 +16,34 @@ header h1 {
     color: white;
 }
 
+/* Back to Home Button */
+.back-button {
+    position: absolute; /* Position relative to the nearest parent with position set */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+    background-color: #3e4d42; /* Matches the body background color */
+    color: white; /* White text for readability */
+    padding: 10px 20px;
+    border: 2px solid #6ea727; /* Green border for accent */
+    border-radius: 5px;
+    text-decoration: none; /* No underline for the button */
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.back-button:hover {
+    background-color: #6ea727; /* Green highlight on hover */
+    color: #3e4d42; /* Dark text on hover */
+}
+
+/* Team Container */
 .team-container {
     padding: 20px;
 }
 
+/* Section Titles */
 .team-section {
     margin-bottom: 40px;
 }
@@ -27,6 +53,7 @@ header h1 {
     color: #a2db4f; /* Light green for section headers */
 }
 
+/* Team Layout */
 .team-row {
     display: flex;
     justify-content: center;
@@ -34,6 +61,7 @@ header h1 {
     gap: 20px;
 }
 
+/* Team Member Cards */
 .team-member {
     width: 150px;
     text-align: center;
@@ -48,17 +76,20 @@ header h1 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
 .team-member img:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
+/* Team Member Text */
 .team-member p {
     margin-top: 10px;
     font-size: 14px;
     color: white;
 }
 
+/* Anchor Tag Styling */
 a {
     text-decoration: none;
 }

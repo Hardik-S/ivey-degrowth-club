@@ -64,5 +64,5 @@ html, body {
 
 /* Prevent content from hiding under the bar */
 body {
-    padding-top: 65px; /* Space for the fixed notification bar */
+    padding-top: 30px; /* Space for the fixed notification bar */
 }
