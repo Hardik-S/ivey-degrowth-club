@@ -23,55 +23,86 @@
 
 .events-section .event-tiles {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
     gap: 1.5rem;
 }
 
 .events-section .event-tile {
-    background: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 300px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    background: #e6f5ea;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .events-section .event-tile:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.events-section .event-tile h3 {
-    font-size: 1.5rem;
+.events-section .event-info {
+    margin-bottom: 1rem;
+}
+
+.events-section .event-info table {
+    width: 100%;
+    border-spacing: 0.5rem;
+}
+
+.events-section .event-info td {
+    vertical-align: top;
+    padding: 0.2rem 0;
+    font-size: 1rem;
     color: #2b3d50;
+}
+
+.events-section .event-info td:first-child {
+    font-weight: bold;
+    width: 20%;
+}
+
+.events-section .event-details p {
+    font-size: 1rem;
+    color: #4a4a4a;
     margin: 1rem 0;
 }
 
-.events-section .event-tile p {
-    font-size: 1rem;
-    color: #4a4a4a;
-    margin: 0.5rem 1rem;
+.events-section .event-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
 }
 
-.events-section .event-tile a {
-    display: inline-block;
+.events-section .event-actions a {
     text-decoration: none;
-    background: #2b3d50;
+    background: #6a51a3;
     color: white;
     padding: 0.8rem 1.2rem;
     border-radius: 5px;
     font-weight: bold;
-    margin: 1rem auto;
     transition: background-color 0.3s;
 }
 
-.events-section .event-tile a:hover {
-    background: #44607d;
+.events-section .event-actions a:hover {
+    background: #4e3a91;
+}
+
+.events-section .register-button {
+    background: #45b29d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.events-section .register-button:hover {
+    background: #3e9d8a;
 }
 
 /* Add fade-in animation */
