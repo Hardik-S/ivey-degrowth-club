@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upcoming Events</title>
     <link rel="stylesheet" href="/css/events.css">
+    <link rel="stylesheet" href="/css/calendar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.3/main.min.css">
 </head>
 <body>
 <div class="events-section">
@@ -12,8 +14,13 @@
         <h2>Upcoming Events</h2>
         <p>Join us for events designed to foster critical thinking and sustainable solutions. Below are the events scheduled for the Diversity of Thought series and Open Forums:</p>
 
+        <!-- Calendar View -->
+        <div class="calendar-container">
+            <div id="calendar"></div>
+        </div>
+
         <div class="event-tiles">
-            <div class="event-tile">
+            <div id="event-systems-thinking" class="event-tile">
                 <div class="event-info">
                     <table>
                         <tr>
@@ -35,11 +42,24 @@
                 </div>
                 <div class="event-actions">
                     <a href="mailto:azhang.hba2025@ivey.ca" target="_blank" class="event-link">Contact Us</a>
-                    <button onclick="window.open('https://www.google.com', '_blank')" class="register-button">Register</button>
+                    <button class="register-button toggle-rsvp" data-event="systems-thinking">RSVP Now</button>
+                </div>
+                <div class="rsvp-section" id="rsvp-systems-thinking" style="display: none;">
+                    <form class="rsvp-form" data-event-id="systems-thinking">
+                        <div class="form-group">
+                            <label for="name-systems-thinking">Your Name</label>
+                            <input type="text" id="name-systems-thinking" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email-systems-thinking">Email Address</label>
+                            <input type="email" id="email-systems-thinking" name="email" required>
+                        </div>
+                        <button type="submit">Submit RSVP</button>
+                    </form>
                 </div>
             </div>
 
-            <div class="event-tile">
+            <div id="event-circular-economies" class="event-tile">
                 <div class="event-info">
                     <table>
                         <tr>
@@ -61,11 +81,24 @@
                 </div>
                 <div class="event-actions">
                     <a href="mailto:azhang.hba2025@ivey.ca" target="_blank" class="event-link">Contact Us</a>
-                    <button onclick="window.open('https://www.google.com', '_blank')" class="register-button">Register</button>
+                    <button class="register-button toggle-rsvp" data-event="circular-economies">RSVP Now</button>
+                </div>
+                <div class="rsvp-section" id="rsvp-circular-economies" style="display: none;">
+                    <form class="rsvp-form" data-event-id="circular-economies">
+                        <div class="form-group">
+                            <label for="name-circular">Your Name</label>
+                            <input type="text" id="name-circular" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email-circular">Email Address</label>
+                            <input type="email" id="email-circular" name="email" required>
+                        </div>
+                        <button type="submit">Submit RSVP</button>
+                    </form>
                 </div>
             </div>
 
-            <div class="event-tile">
+            <div id="event-critical-thinking" class="event-tile">
                 <div class="event-info">
                     <table>
                         <tr>
@@ -87,11 +120,24 @@
                 </div>
                 <div class="event-actions">
                     <a href="mailto:azhang.hba2025@ivey.ca" target="_blank" class="event-link">Contact Us</a>
-                    <button onclick="window.open('https://www.google.com', '_blank')" class="register-button">Register</button>
+                    <button class="register-button toggle-rsvp" data-event="critical-thinking">RSVP Now</button>
+                </div>
+                <div class="rsvp-section" id="rsvp-critical-thinking" style="display: none;">
+                    <form class="rsvp-form" data-event-id="critical-thinking">
+                        <div class="form-group">
+                            <label for="name-critical">Your Name</label>
+                            <input type="text" id="name-critical" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email-critical">Email Address</label>
+                            <input type="email" id="email-critical" name="email" required>
+                        </div>
+                        <button type="submit">Submit RSVP</button>
+                    </form>
                 </div>
             </div>
 
-            <div class="event-tile">
+            <div id="event-financial-inequalities" class="event-tile">
                 <div class="event-info">
                     <table>
                         <tr>
@@ -113,11 +159,24 @@
                 </div>
                 <div class="event-actions">
                     <a href="mailto:azhang.hba2025@ivey.ca" target="_blank" class="event-link">Contact Us</a>
-                    <button onclick="window.open('https://www.google.com', '_blank')" class="register-button">Register</button>
+                    <button class="register-button toggle-rsvp" data-event="financial-inequalities">RSVP Now</button>
+                </div>
+                <div class="rsvp-section" id="rsvp-financial-inequalities" style="display: none;">
+                    <form class="rsvp-form" data-event-id="financial-inequalities">
+                        <div class="form-group">
+                            <label for="name-financial">Your Name</label>
+                            <input type="text" id="name-financial" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email-financial">Email Address</label>
+                            <input type="email" id="email-financial" name="email" required>
+                        </div>
+                        <button type="submit">Submit RSVP</button>
+                    </form>
                 </div>
             </div>
 
-            <div class="event-tile">
+            <div id="event-culmination" class="event-tile">
                 <div class="event-info">
                     <table>
                         <tr>
@@ -139,11 +198,47 @@
                 </div>
                 <div class="event-actions">
                     <a href="mailto:azhang.hba2025@ivey.ca" target="_blank" class="event-link">Contact Us</a>
-                    <button onclick="window.open('https://www.google.com', '_blank')" class="register-button">Register</button>
+                    <button class="register-button toggle-rsvp" data-event="culmination">RSVP Now</button>
+                </div>
+                <div class="rsvp-section" id="rsvp-culmination" style="display: none;">
+                    <form class="rsvp-form" data-event-id="culmination">
+                        <div class="form-group">
+                            <label for="name-culmination">Your Name</label>
+                            <input type="text" id="name-culmination" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email-culmination">Email Address</label>
+                            <input type="email" id="email-culmination" name="email" required>
+                        </div>
+                        <button type="submit">Submit RSVP</button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.3/main.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButtons = document.querySelectorAll('.toggle-rsvp');
+    
+    toggleButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const eventId = this.dataset.event;
+            const rsvpSection = document.getElementById(`rsvp-${eventId}`);
+            
+            if (rsvpSection.style.display === 'none') {
+                rsvpSection.style.display = 'block';
+                this.textContent = 'Hide RSVP Form';
+            } else {
+                rsvpSection.style.display = 'none';
+                this.textContent = 'RSVP Now';
+            }
+        });
+    });
+});
+</script>
+<script src="/js/calendar.js"></script>
 </body>
 </html>
